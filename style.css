@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@400;500;900&display=swap');
+:root
+{
+    --primary1: #383838 ;
+    --primary2: #F7941E;
+    --primary3: #FFFFFF;
+    --secondary1: #505050;
+    --secondary2: #818181;
+    --secondary3: #bebebe;
+    --secondary4:#3f3f3f;
+}
+
+*,*::after,*::before
+{
+    box-sizing: border-box;
+}
+
+body{
+    /* position: relative; */
+    overflow-x: hidden;
+    color: var(--primary3);
+    background: var(--primary1);
+    font-family: 'NOTO',sans-serif;
+}
+
+header
+{
+    border-bottom: 1px  solid var(--secondary1);
+    height: 80px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    
+}
+
+nav > ul{
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+  list-style-type: none;
+  margin-right:10%;
+  flex-basis: 60%;
+  padding: 0;
+  
+}
+nav > ul > li > a
+{
+    text-decoration: none;
+    font-family:'NOTO',sans-serif;
+    font-weight: 400;
+    color: var(--primary3);
+    z-index: 99;
+    
+}
+
+/* nav > ul > li > a:hover
+{
+    border: 1px red solid;
+} */
+
+.logo
+{
+    position: absolute;
+    height: 140px ;
+    margin-top: 0;
+    top:-20px;
+    left: 100px;
+    z-index:-99;
+}
+
+.navItems >a
+{
+    z-index:99;
+}
+
+/* ---  Section 1 --- */
+
+/* .banner
+{
+    border-bottom: 1px solid var(--secondary1);
+} */
+
+.bann_title
+{
+    display: inline-block;
+    position: absolute;
+    font-family:'NOTO',sans-serif;
+    font-size:4.5em;
+    font-weight: 700;
+    transform: scale(1,1.2);
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    left: 10%;
+    margin-top: 7%;
+}
+.car
+{    position: relative;
+     color: var(--primary2);
+}
+.car::after
+{
+    position: absolute;
+    content: '';
+    width: 460px;
+    height: 440px;
+    background: var(--primary3);
+    top:-150px;
+    right:-700px;
+}
+
+.car::before
+{
+    position:absolute;
+    content: '';
+    height:300px;
+    width:200px;
+    background: transparent;
+    border-top: 3px  solid var(--primary2);
+    border-left: 4px solid var(--primary2);
+    border-bottom: 3px solid var(--primary2);
+    top: -120%;
+    left: 125%;
+
+}
+
+.deco{
+    position: relative;
+}
+.deco::before
+{
+    position: absolute;
+    content: '';
+    height: 300px;
+    width: 200px;
+    background: transparent;
+    top:-2.3em;
+    left: 200%;
+    border-top: 2px  solid var(--primary1);
+    border-right: 3px solid var(--primary1);
+    border-bottom: 2px solid var(--primary1);
+}
+
+.deco::after
+{
+    position: absolute;
+    content: '';
+    height: 10px;
+    width: 30px;
+    background: var(--primary2);
+    left:-4.1em;
+    top:0.5em;
+    box-shadow: 0 -1.1em 0 0 var(--primary3),
+                0 -2.3em 0 0 var(--primary2);
+}
+
+.bann_img
+{   position: absolute;
+    height: 400px;
+    right: -7%;
+    top:20%
+    
+}
+
+.socialBanner
+{
+    position: relative;
+    left: 75%;
+    text-decoration: none;
+    list-style: none;
+    color: var(--primary1);
+    top:28em;
+    display: flex;
+    gap: 5%;
+
+}
+
+.bttn
+{
+    position: absolute;
+    background: transparent;
+    border: 1px solid var(--primary2);
+    top: 88%;
+    left:10%;
+    padding: 1em 2em;
+    font-family: 'NOTO',sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    
+    
+}
+.bttn > a{
+    color: var(--primary3);
+    text-decoration: none;
+    letter-spacing: 1px;
+
+}
+
+/* ---  Section 2 --- */
+
+.service
+{
+    position: relative;
+   height: 100vh;
+   bottom:-30em;
+   border-top: 1px solid var(--secondary1);
+}
+
+.secTitle
+{   
+    display: inline-block;
+    font-weight: 700;
+    font-size:3.5em;
+    text-transform: uppercase;
+    margin-left: 2em;
+    transform: scale(1,1.2);
+}
+
+.service > .secTitle > span
+{
+    color: var(--primary2);
+}
+
+.rate
+{   
+    position: absolute;
+    display: inline-block;
+    right: 10%;
+    margin-top:6em;
+    transform: scale(1,1.3);
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+.rate > span
+{
+    position: relative;
+    color: var(--secondary2);
+    font-weight: 500;
+    font-size: 0.6em;
+    padding-left: 0.4em;
+    text-align: center;
+}
+
+.rate > span::after
+{
+    position: absolute;
+    content: '';
+    height:5px;
+    width:120px;
+    background: var(--primary3);
+    right:-120%;
+    top:0.4em;
+    box-shadow: 5em 3em  0 -1px var(--primary2),
+                5em -3em  0 -1px var(--primary2) ;
+}
+
+
+.flex_container
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:6%;
+    width: 100%;
+    height: max-content;
+
+}
+
+
+
+.flex_title
+{
+    /* display: inline-block; */
+    text-align: center;
+    line-height: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    transform: scale(1,1.2);;
+    font-weight: 500;
+    font-size: 1em;
+    /* color: var(--secondary3); */
+
+
+}
+
+.flex_title > span
+{
+    font-weight: 700;
+    color: var(--primary3);
+}
+
+.flex_item
+{
+    /* border: 1px wheat solid; */
+    min-height: 400px;
+}
+
+.flex_item > img{
+    height: 150px;
+}
+
+.item2
+{
+    position: relative;
+    flex-basis:25% ;
+    top: -50px;
+    background: var(--primary2);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.item1 
+{
+    flex-basis: 20%;
+    height: 400px;
+    background: var(--secondary1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.item1 > img{
+    height: 100px;
+    margin-top:30px
+}
+
+.item2 > img
+{
+    position: absolute;
+    height: 200px;
+    margin-top: 150px;
+    
+}
+
+.flex_item > button
+{
+    position: absolute;
+    bottom: 50px;
+    padding:1em 2em;
+    background: transparent;
+    color: var(--primary3);
+    font-weight: 500;
+    font-size: 1em;
+}
+
+
+
+.item1 > button
+{
+    bottom:-50px;
+    margin:0 auto;
+    border: 1px solid var(--primary2);
+    
+}
+
+.item2 > button
+{
+    border: 1px solid var(--primary3);
+}
+
+
+/* --- SECTION 3 --- */
+
+.thirdSec
+{
+    position: relative;
+   height: 100vh;
+   bottom:-50em;
+   display: flex;
+   flex-direction: column;
+   border-top: 1px solid var(--secondary1);
+}
+
+.rd_flex_title
+{
+    display: inline-block;
+    font-weight: 700;
+    font-size:3.5em;
+    text-transform: uppercase;
+    margin-left: 2em;
+    transform: scale(1,1.2);
+    margin-left: 1.4em;
+    
+}
+
+.rd_flex_title > span{
+    position: relative;
+    color: var(--primary2);
+}
+
+.rd_flex_title > span::before
+{
+    position: absolute;
+    content:'';
+    height:5px;
+    width: 120px;
+    background: var(--primary3);
+    right: -210%;
+    box-shadow: 40px 30px  0 -1px var(--primary2),
+                40px -30px  0 -1px var(--primary2);
+        
+}
+
+.rd_flex_container
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap:1%;
+    justify-content: space-around;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+.rd_flex_item
+{
+    flex-basis: 30%;
+    /* border: 1px solid gold; */
+    background: var(--secondary4);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 3%;
+    min-height: 300px;
+    padding: 2em 3em;
+
+
+}
+.rd_flex_item > h2
+{
+    text-transform: uppercase;
+    font-size: 1.1em;
+    transform: scale(1,1.1);
+}
+.rd_flex_item >p
+{
+    display: inline-block;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 1.6em;
+    color: var(--secondary2);
+}
+.rd_flex_item > i{
+    margin-bottom: 20px;
+    color: var(--primary2);
+
+}
+
+
+/* --- SECTION 4 */
+
+.forthSec
+{
+    position: relative;
+    height: 100vh;
+    bottom:-75em;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--secondary1);
+}
+
+.forthSec > h1{
+    display: inline-block;
+    font-weight: 700;
+    font-size:3.5em;
+    text-transform: uppercase;
+    margin-left: 2em;
+    transform: scale(1,1.2);
+    margin-left: 1.4em;
+
+}
+
+.forthSec > h2{
+    
+  margin-left: 10px;
+}
+
+.forthSec > h1 > .up
+{
+    position: relative;
+    
+    color: var(--secondary3);
+    font-size: 0.2em;
+    font-weight: 500;
+    letter-spacing: 4px;
+    
+
+}
+
+
+.forthSec > h1 > .down
+{
+    color: var(--primary2);
+}
+
+.fth_flex_container
+{
+    display: flex;
+    width: 100%;
+    /* border:1px solid red; */
+    gap:2%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.fth_flex_item
+{
+    position: relative;
+    /* border:1px solid gold; */
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding:2em;
+    flex-basis: 22%;
+    height: 450px;
+    font-weight: 500;
+
+}
+
+.fth_flex_item > h2
+{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    transform: scale(1,1.2);
+}
+
+.fth_flex_item > i{
+    background: var(--secondary4);
+    color: var(--primary2);
+    padding:1.5em;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.fth_flex_item > p{
+    text-align: center;
+    line-height: 1.4em;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 0.9em;
+    color: var(--secondary2);
+}
+
+.fth_flex_item > span
+{
+    position: absolute;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    font-weight: 500;
+    bottom:50px;
+    padding-bottom: 0.5em;
+    text-align: center;
+    width:50px;
+    border-bottom: 1px solid var(--primary2);
+    
+}
+
+/* --- FOOTER 3 --- */
+
+footer
+{
+    position: relative;
+    height: 100vh;
+    bottom:-85em;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+
+}
+
+.up_foot
+{
+   background: var(--primary2);
+    display: flex;
+    justify-content: center;
+    width:100%;
+    gap:3%;
+    
+}
+.up_foot > div 
+{
+    
+    flex-basis: 20%;
+
+}
+
+.up_foot > div > h3
+{
+    font-size: 3em;
+    text-align: center;
+    transform: scale(1,1.2);
+}
+
+.up_foot > div > h3 >span
+{
+    
+    font-size: 0.4em;
+    font-weight: 500;
+    color: var(--secondary1);
+    margin-top: 0;
+    
+}
+
+/* mid footer */
+
+.mid_foot
+{
+    display: flex;
+    padding:1em 3em;
+    gap:2%;
+}
