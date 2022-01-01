@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rent.css">
+    <script src="rent.js"></script>
+    <title>Rent | RentMeNow</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.htm"><img class="logo" src="imges/Black and Red Modern Automotive Car Logo.svg" alt="the Logo"></a>
+            <ul class="navFlexParent">
+                <!-- <li class="navItems flex_logo"></li> -->
+                <li class="navItems"><a href="index.htm">Home</a></li>
+                <li class="navItems"><a href="gallery.htm">Gallery</a></li>
+                <li class="navItems"><a href="#">Rent</a></li>
+                <li class="navItems"><a href="contact.htm">Contact</a></li>
+                <li class="navItems"><a class="sign" href="#"><i class="fas fa-2x fa-sign-in-alt"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+    
+    <div class="decoration"></div>
+    <main>
+    
+
+    <div class="container">
+        <div class="text"> Book a Vehicule</div>
+        <form action="#">
+          <div class="form-row">
+            <div class="input-data">
+              <input type="text" required>
+              <div class="underline"></div>
+              <label for="">Full Name</label>
+            </div>
+            <div class="input-data">
+              <input type="text" required>
+              <div class="underline"></div>
+              <label for="">location</label>
+            </div>
+            
+          </div>
+             
+
+
+             <label class="bttm_lbl" for="vehicule"> Vehicule Type </label><br>
+             <select name="vehicule" class="types">
+                 <option class="op_moto">Moto</option>
+                 <option class="op_citadin">Citadin</option>
+                 <option class="op_compact">Comptact</option>
+                 <option class="op_berline">Berline</option>
+                 <option class="op_utilitaire">Utilitaire</option>
+                 <option class="op_chantier">Engin de chantier</option>
+                 <option class="op_camion">Camion</option>
+             </select><br>
+
+             <label class="bttm_lbl"  for="fuel">Engin</label><br>
+             <select name="" id="engin">
+                 <option class="diesel">Diesel</option>
+                 <option class="">Essence</option>
+                 <option class="">Electric</option>
+                 <option class="">Hybrid</option>
+             </select> <br>
+
+             <label class="bttm_lbl"  for="">Gear Box</label><br>
+             <select name="" id="">
+                 <option value="">Automatic</option>
+                 <option value="">Manual</option>
+             </select>
+             <label class="bttm_lbl date_lbl" for="">Pick up Date</label>
+             <input class="date"  type="date" required>
+             
+             <label class="bttm_lbl date_lbl" for="">Pick up Date</label>
+             <input class="date"  type="date" required>
+
+             <div class="form-row submit-btn">
+                <div class="input-data">
+                  <div class="inner"></div>
+                  <input onclick="popup()"  type="submit" value="Book">
+                </div>
+              </div>
+          </form>
+          
+     </div>
+
+    </main>
+
+
+</body>
+</html>

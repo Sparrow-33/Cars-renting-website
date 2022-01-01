@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@400;500;900&display=swap');
 
 
 :root
@@ -17,8 +17,10 @@
   padding: 0;
   outline: none;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Noto', sans-serif;
 }
+
+
 
 body{
   display: flex;
@@ -28,12 +30,31 @@ body{
   padding: 40px;
   background: linear-gradient(115deg, var(--primary2) 10%, var(--primary1) 90%);
 }
+/* header
+{
+  position: relative;
+  height: 90px;
+  border: 1px solid blue;
+  top: -250px;
+  width: 100%;
+  
+} */
+
+.logo
+{
+  position: absolute;
+  height: 150px;
+  top: 0%;
+  left: 0;
+}
+
 .container{
   max-width: 800px;
   background: #fff;
   width: 800px;
   padding: 25px 40px 10px 40px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  margin-top: 10vh;
 }
 .container .text{
   text-align: center;
