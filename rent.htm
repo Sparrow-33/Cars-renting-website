@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="rent.css">
-    <script src="rent.js"></script>
+    <script src="https://kit.fontawesome.com/cac193e905.js" crossorigin="anonymous"></script>
+
     <title>Rent | RentMeNow</title>
 </head>
 <body>
@@ -34,12 +35,12 @@
         <form action="#">
           <div class="form-row">
             <div class="input-data">
-              <input type="text" required>
+              <input class="Cname" type="text" required>
               <div class="underline"></div>
               <label for="">Full Name</label>
             </div>
             <div class="input-data">
-              <input type="text" required>
+              <input class="Cname" type="text" required>
               <div class="underline"></div>
               <label for="">location</label>
             </div>
@@ -49,34 +50,35 @@
 
 
              <label class="bttm_lbl" for="vehicule"> Vehicule Type </label><br>
-             <select name="vehicule" class="types">
-                 <option class="op_moto">Moto</option>
-                 <option class="op_citadin">Citadin</option>
-                 <option class="op_compact">Comptact</option>
-                 <option class="op_berline">Berline</option>
+             <select name="vehicule" class="types" onchange="getOption()">
+                 <option class="op_moto op" >Moto</option>
+                 <option class="op_citadi op">Citadin</option>
+                 <option class="op_compact op">Compact</option>
+                 <option class="op_berline ">Berline</option>
                  <option class="op_utilitaire">Utilitaire</option>
                  <option class="op_chantier">Engin de chantier</option>
                  <option class="op_camion">Camion</option>
              </select><br>
 
              <label class="bttm_lbl"  for="fuel">Engin</label><br>
-             <select name="" id="engin">
+             <select name="" id="engin" class="fuel" onchange="SelectEngin()">
                  <option class="diesel">Diesel</option>
-                 <option class="">Essence</option>
-                 <option class="">Electric</option>
-                 <option class="">Hybrid</option>
+                 <option class="essence">Essence</option>
+                 <option class="elec">Electric</option>
+                 <option class="hybrid ">Hybrid</option>
              </select> <br>
-
-             <label class="bttm_lbl"  for="">Gear Box</label><br>
-             <select name="" id="">
-                 <option value="">Automatic</option>
-                 <option value="">Manual</option>
+   
+             <label class="bttm_lbl "  for="">Gear Box</label><br>
+             <select class="gearBox" name="" id="" onchange="getGearBox()">
+                 <option class="auto" value="">Automatic</option>
+                 <option class="man" value="">Manual</option>
              </select>
+   
              <label class="bttm_lbl date_lbl" for="">Pick up Date</label>
-             <input class="date"  type="date" required>
+             <input class="date " id="date_1"  type="date" required>
              
              <label class="bttm_lbl date_lbl" for="">Pick up Date</label>
-             <input class="date"  type="date" required>
+             <input class="date " id="date_2"  type="date" required>
 
              <div class="form-row submit-btn">
                 <div class="input-data">
@@ -88,8 +90,86 @@
           
      </div>
 
+     <footer >
+       
+
+        <section class="mid_foot">
+
+
+                <div class="mid_foot_item">
+                    <div class="mid_foot_item_inner inner1">
+                        <p class="inner_parag">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Sequi voluptatem, non autem repudiandae exercitationem
+                              ipsum explicabo mollitia magni nobis nemo.
+                                
+                             </p>
+
+                             <ul class="social_foot">
+                                 <li><i class="fab fa-facebook-f"></i></li>
+                                 <li><i class="fab fa-instagram"></i></li>
+                                 <li><i class="fab fa-twitter"></i></li>
+                             </ul>
+                    </div>
+                </div>
+
+                
+
+                <div class="mid_foot_item">
+
+                    <h3 class="foot_title">contact us</h3>
+                    <div class="div_para">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p class="location">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, iste!</p>
+                    </div> 
+
+                    <div class="div_para">
+                    <i class="fas fa-envelope"></i>
+                    <p class="location">test@test.com</p>
+                </div>
+                </div>
+
+
+                <div class="mid_foot_item">
+                      <h3 class="foot_title">services</h3>
+                      <p>wedding Rides</p>
+                      <p>VIP Corporate</p>
+                      <p>Truck Rent</p>
+                </div>
+
+                <div class="mid_foot_item">
+
+                      <h3 class="foot_title">Company</h3>
+                      <p>About</p>
+                      <p>Blog</p>
+                      <p>Press</p>
+                      <p>Policy</p>
+                      <p>Support</p>
+                </div>
+
+
+                <div class="mid_foot_item">
+                    <h3 class="foot_title">newsletter</h3>
+                    <p>Lorem ipsum dolor sit,
+                         amet consectetur adipisicing elit.
+                          Sed, ab!
+                    </p>
+
+                    <form action="">
+                        <input type="email" name="" id="" placeholder="Email here to signup ">
+                        <i class="far fa-paper-plane"></i>
+                    </form>
+                </div>
+
+                <div class="mid_foot_item"><p class="down_parag">Privacy Policy | Terms & conditions | &copy; 2021-2022 All rights reserved.</p></div>
+        </section>
+
+         
+
+    </footer>
     </main>
 
 
 </body>
+<script src="rent.js"></script>
+
 </html>

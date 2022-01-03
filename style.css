@@ -667,17 +667,17 @@ footer
     display: flex;
     list-style: none;
     width: max-content;
-    gap:10px;
+    gap:40px;
     margin-top: 30px;
 
 }
-.social_foot > li
+/* .social_foot > li
 {
     background:transparent;
     padding: 0.6em 0.7em;
     border-radius: 100%;
     border: 1.2px solid var(--secondary2);
-}
+} */
 
 .foot_title
 {
@@ -892,7 +892,8 @@ footer
         
     }
 
-
+    
+    
     
     .rd_flex_item > h2
     {
@@ -985,4 +986,24 @@ footer
        font-size:12px ;
        
    }
+   .social_foot {
+       margin: 0 auto;
+       /* align-self: center; */
+       padding:0;
+   }
+   .inner_parag
+   {
+       padding:3em;
+   }
+
+   .div_para
+   {
+      
+       flex-direction: column;
+   }
+   .div_para >p
+   {
+       padding: 0 3em;
+   }
+  
 }

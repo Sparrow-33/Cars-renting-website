@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title> Contact  | CampCodes</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://kit.fontawesome.com/cac193e905.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact.css">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <!-- <header>
+    <header>
       <nav>
           <a href="#"><img class="logo" src="imges/Black and Red Modern Automotive Car Logo.svg" alt="the Logo"></a>
           <ul class="navFlexParent">
@@ -21,7 +22,7 @@
               <li class="navItems"><a href="#"><i class="fas fa-2x fa-sign-in-alt"></i></a></li>
           </ul>
       </nav>
-  </header> -->
+  </header>
 
 
 
@@ -33,43 +34,116 @@
       <form action="#">
         <div class="form-row">
           <div class="input-data">
-            <input type="text" required>
+            <input class="name" type="text" required>
             <div class="underline"></div>
             <label for="">First Name</label>
           </div>
           <div class="input-data">
-            <input type="text" required>
+            <input class="lastName" type="text" required>
             <div class="underline"></div>
             <label for="">Last Name</label>
           </div>
         </div>
         <div class="form-row">
           <div class="input-data">
-            <input type="email" required>
+            <input class="Email" type="email" required>
             <div class="underline"></div>
             <label for="">Email Address</label>
           </div>
-          <div class="input-data">
-            <input type="text" required>
-            <div class="underline"></div>
-            <label for="">Website Name</label>
-          </div>
+          
         </div>
         <div class="form-row">
           <div class="input-data textarea">
-            <textarea rows="8" cols="80" required></textarea>
+            <textarea class="message" rows="8" cols="80" required></textarea>
             <div class="underline"></div>
-            <label for="">Write your message</label>
+            <label class="write" for="">Write your message</label>
           </div>
         </div>
         <div class="form-row submit-btn">
           <div class="input-data">
             <div class="inner"></div>
-            <input type="submit" value="submit">
+            <input type="submit" value="submit" onclick="popup()">
           </div>
         </div>
       </form>
     </div>
  
+
+    <footer>
+      <section class="mid_foot">
+
+
+        <div class="mid_foot_item">
+            <div class="mid_foot_item_inner inner1">
+                <p class="inner_parag">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Sequi voluptatem, non autem repudiandae exercitationem
+                      ipsum explicabo mollitia magni nobis nemo.
+                        
+                     </p>
+
+                     <ul class="social_foot">
+                         <li><i class="fab fa-facebook-f"></i></li>
+                         <li><i class="fab fa-instagram"></i></li>
+                         <li><i class="fab fa-twitter"></i></li>
+                     </ul>
+            </div>
+        </div>
+
+        
+
+        <div class="mid_foot_item">
+
+            <h3 class="foot_title">contact us</h3>
+            <div class="div_para">
+            <i class="fas fa-map-marker-alt"></i>
+            <p class="location">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, iste!</p>
+            </div> 
+
+            <div class="div_para">
+            <i class="fas fa-envelope"></i>
+            <p class="location">test@test.com</p>
+        </div>
+        </div>
+
+
+        <div class="mid_foot_item">
+              <h3 class="foot_title">services</h3>
+              <p>wedding Rides</p>
+              <p>VIP Corporate</p>
+              <p>Truck Rent</p>
+        </div>
+
+        <div class="mid_foot_item">
+
+              <h3 class="foot_title">Company</h3>
+              <p>About</p>
+              <p>Blog</p>
+              <p>Press</p>
+              <p>Policy</p>
+              <p>Support</p>
+        </div>
+
+
+        <div class="mid_foot_item">
+            <h3 class="foot_title">newsletter</h3>
+            <p>Lorem ipsum dolor sit,
+                 amet consectetur adipisicing elit.
+                  Sed, ab!
+            </p>
+
+            <form action="">
+                <input type="email" name="" id="" placeholder="Email here to signup ">
+                <i class="far fa-paper-plane"></i>
+            </form>
+        </div>
+
+        <div class="mid_foot_item"><p class="down_parag">Privacy Policy | Terms & conditions | &copy; 2021-2022 All rights reserved.</p></div>
+</section>
+
+ 
+
+</footer>
+
   </body>
+  <script src="contact.js"></script>
 </html>

@@ -23,12 +23,10 @@
 
 
 body{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
   min-height: 100vh;
-  padding: 40px;
-  background: linear-gradient(115deg, var(--primary2) 10%, var(--primary1) 90%);
+  /* padding: 40px; */
+  background: var(--primary1);
 }
 /* header
 {
@@ -44,17 +42,22 @@ body{
 {
   position: absolute;
   height: 150px;
-  top: 0%;
+  top: -6%;
   left: 0;
+}
+
+.navFlexParent
+{
+  margin-top: 20px;
 }
 
 .container{
   max-width: 800px;
-  background: #fff;
+  background: var();
   width: 800px;
   padding: 25px 40px 10px 40px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-  margin-top: 10vh;
+  margin:0 auto
 }
 .container .text{
   text-align: center;
@@ -66,6 +69,7 @@ body{
 }
 .container form{
   padding: 30px 0 0 0;
+  
 }
 .container form .form-row{
   display: flex;
@@ -88,6 +92,13 @@ form .form-row .textarea{
   border: none;
   font-size: 17px;
   border-bottom: 2px solid rgba(0,0,0, 0.12);
+  background: var(--primary1);
+}
+
+.write
+{
+  background: var(--primary1);
+  
 }
 .input-data input:focus ~ label, .textarea textarea:focus ~ label,
 .input-data input:valid ~ label, .textarea textarea:valid ~ label{
@@ -109,7 +120,7 @@ form .form-row .textarea{
 .textarea label{
   width: 100%;
   bottom: 40px;
-  background: #fff;
+  /* background: var(--s); */
 }
 .input-data .underline{
   position: absolute;
@@ -160,6 +171,20 @@ form .form-row .textarea{
   cursor: pointer;
   position: relative;
   z-index: 2;
+}
+
+footer
+{
+  position: relative;
+  top:10px;
+  border-top: 1px solid var(--secondary1);
+  width: 100vw;
+}
+.mid_foot
+{
+
+  width: 100%;
+  gap:10px;
 }
 @media (max-width: 700px) {
   .container .text{
