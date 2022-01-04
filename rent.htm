@@ -18,7 +18,7 @@
                 <!-- <li class="navItems flex_logo"></li> -->
                 <li class="navItems"><a href="index.htm">Home</a></li>
                 <li class="navItems"><a href="gallery.htm">Gallery</a></li>
-                <li class="navItems"><a href="#">Rent</a></li>
+                <li class="navItems"><a href="">Rent</a></li>
                 <li class="navItems"><a href="contact.htm">Contact</a></li>
                 <li class="navItems"><a class="sign" href="#"><i class="fas fa-2x fa-sign-in-alt"></i></a></li>
             </ul>
@@ -35,12 +35,12 @@
         <form action="#">
           <div class="form-row">
             <div class="input-data">
-              <input class="Cname" type="text" required>
+              <input class="Cname " type="text" required>
               <div class="underline"></div>
               <label for="">Full Name</label>
             </div>
             <div class="input-data">
-              <input class="Cname" type="text" required>
+              <input class=" location Cname" type="text" required>
               <div class="underline"></div>
               <label for="">location</label>
             </div>
@@ -51,39 +51,42 @@
 
              <label class="bttm_lbl" for="vehicule"> Vehicule Type </label><br>
              <select name="vehicule" class="types" onchange="getOption()">
-                 <option class="op_moto op" >Moto</option>
-                 <option class="op_citadi op">Citadin</option>
-                 <option class="op_compact op">Compact</option>
-                 <option class="op_berline ">Berline</option>
-                 <option class="op_utilitaire">Utilitaire</option>
-                 <option class="op_chantier">Engin de chantier</option>
-                 <option class="op_camion">Camion</option>
+                <option selected>Select your Vehicule...</option>
+                 <option value="moto" class="op_moto op" >Moto</option>
+                 <option value="citadine" class="op_citadi op">Citadin</option>
+                 <option value="compact" class="op_compact op">Compact</option>
+                 <option value="berline" class="op_berline ">Berline</option>
+                 <option value="utilitaire" class="op_utilitaire">Utilitaire</option>
+                 <option value="engin" class="op_chantier">Engin de chantier</option>
+                 <option value="camion" class="op_camion">Camion</option>
              </select><br>
 
              <label class="bttm_lbl"  for="fuel">Engin</label><br>
-             <select name="" id="engin" class="fuel" onchange="SelectEngin()">
-                 <option class="diesel">Diesel</option>
-                 <option class="essence">Essence</option>
-                 <option class="elec">Electric</option>
-                 <option class="hybrid ">Hybrid</option>
+             <select  name="" id="engin" class="fuel" onchange="SelectEngin()">
+                <option selected>Select your Engin...</option>
+                 <option value="diesel" class="diesel">Diesel</option>
+                 <option value="essence" class="essence">Essence</option>
+                 <option value="elec" class="elec">Electric</option>
+                 <option value="hybrid" class="hybrid ">Hybrid</option>
              </select> <br>
    
              <label class="bttm_lbl "  for="">Gear Box</label><br>
              <select class="gearBox" name="" id="" onchange="getGearBox()">
-                 <option class="auto" value="">Automatic</option>
-                 <option class="man" value="">Manual</option>
+                <option selected>Select Gear Box...</option>
+                 <option value="auto" class="auto" value="">Automatic</option>
+                 <option value="manuel" class="man" value="">Manual</option>
              </select>
    
              <label class="bttm_lbl date_lbl" for="">Pick up Date</label>
-             <input class="date " id="date_1"  type="date" required>
+             <input class="date date_1"  type="date" required>
              
              <label class="bttm_lbl date_lbl" for="">Pick up Date</label>
-             <input class="date " id="date_2"  type="date" required>
+             <input class="date date_2"   type="date" required>
 
              <div class="form-row submit-btn">
                 <div class="input-data">
                   <div class="inner"></div>
-                  <input onclick="popup()"  type="submit" value="Book">
+                  <input   type="submit" value="Book" onclick="setPrice(),clickme()">
                 </div>
               </div>
           </form>
@@ -167,9 +170,10 @@
 
     </footer>
     </main>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+    <script src="rent.js"></script>
 
 </body>
-<script src="rent.js"></script>
 
 </html>
