@@ -42,13 +42,13 @@ body{
 {
   position: absolute;
   height: 150px;
-  top: -6%;
+  top: -9%;
   left: 0;
 }
 
 .navFlexParent
 {
-  margin-top: 0px;
+  margin:20px auto;
 }
 
 .container{
